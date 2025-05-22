@@ -10,7 +10,15 @@ export default function Banner() {
             <h3 className="text-4xl text-green-100 font-bold">engineer</h3>
           </div>
           <div className="flex gap-6 mt-12">
-            <Button>Hire Me</Button>
+            <Button
+              onClick={() => {
+                document.getElementById("messages")?.scrollIntoView({
+                  behavior: "smooth",
+                });
+              }}
+            >
+              Hire Me
+            </Button>
             <Button
               variant="secondary"
               className="flex items-center gap-[10px]"

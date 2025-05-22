@@ -31,6 +31,10 @@
   --text-shadow-xl: 0 4px 4px rgb(0, 0, 0 / 0.5);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .wrapper {
   @apply max-w-[1200px] w-full;
 }
