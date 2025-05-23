@@ -7,7 +7,6 @@ import {
   CarouselPrevious,
 } from "~/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
-import { href, Link } from "react-router";
 
 export default function ProjectComponent() {
   const dataProjects = [

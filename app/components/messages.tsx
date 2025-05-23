@@ -1,7 +1,7 @@
-import { useActionData, useFetcher } from "react-router";
-import { Button } from "./ui/button";
 import { useEffect, useRef, useState } from "react";
+import { useFetcher } from "react-router";
 import { toast } from "sonner";
+import { Button } from "./ui/button";
 
 export default function Messages() {
   let fetcher = useFetcher();
@@ -29,7 +29,10 @@ export default function Messages() {
       toast("Message has been sent", {
         action: {
           label: "Close",
-          onClick: () => console.log("Undo"),
+          onClick(event) {
+            event.preventDefault();
+            toast.dismiss();
+          },
         },
         style: {
           background: "#333",
@@ -50,7 +53,7 @@ export default function Messages() {
             <img
               src="/assets/illus-message.png"
               alt="illus-message"
-              className="w-[255px] h-348px]"
+              className="w-[255px] h-[348px]"
             />
           </div>
         </div>

@@ -50,11 +50,7 @@ export async function action({ request }: ActionFunctionArgs) {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({ email, yourname, yourmessage }),
-  })
-    .then(() => {
-      console.log("success");
-    })
-    .catch((e) => console.log(e));
+  });
 
   return {
     message: "success",
