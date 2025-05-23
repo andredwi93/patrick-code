@@ -3,6 +3,7 @@ import {
   Docker,
   Firebase,
   Flutter,
+  Git,
   Html5,
   Javascript,
   MongodbWordmark,
@@ -35,6 +36,7 @@ export default function Icons() {
     <PostgresqlDark className="w-10 h-10" />,
     <Firebase className="w-10 h-10" />,
     <Docker className="w-10 h-10" />,
+    <Git className="w-10 h-10" />,
   ];
   return (
     <>

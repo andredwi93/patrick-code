@@ -1,40 +1,95 @@
 import Icons from "~/lib/data";
-
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "~/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
+import { href, Link } from "react-router";
 
 export default function ProjectComponent() {
+  const dataProjects = [
+    {
+      link: "https://impactsea.org/",
+      src: "/assets/impactsea.webp",
+      alt: "impactsea",
+    },
+    {
+      link: "https://riliv.co/",
+      src: "/assets/riliv-landingpage.webp",
+      alt: "riliv-landingpage",
+    },
+    {
+      link: "https://www.delvio.co/",
+      src: "/assets/delvio.webp",
+      alt: "delvio",
+    },
+    {
+      link: "https://student.riliv.ai/",
+      src: "/assets/rfe-student.png",
+      alt: "rfe-student",
+    },
+    {
+      link: "https://indonesiamendengar.riliv.co/",
+      src: "/assets/indonesia.png",
+      alt: "indonesia",
+    },
+    {
+      link: "https://employee.riliv.co/",
+      src: "/assets/employee-riliv.png",
+      alt: "employee-riliv",
+    },
+    {
+      link: "https://parent.riliv.ai",
+      src: "/assets/rfe-parent.png",
+      alt: "rfe-parent",
+    },
+    {
+      link: "https://scheduling.riliv.co/",
+      src: "/assets/scheduling.png",
+      alt: "scheduling",
+    },
+  ];
   return (
-    <div
-      id="projects"
-      className="bg-primary-300"
-    >
+    <div id="projects" className="bg-primary-300">
       <div className="wrapper mx-auto py-16">
-        <div>
+        <div className="relative">
           <h2 className="text-3xl text-white font-bold">
             My recent <span className="text-green-100">works</span>
           </h2>
-          <div className="mt-6 flex gap-12">
-            <div className="flex-1 h-[280px] bg-primary-100/50 backdrop-blur-xs rounded-2xl flex items-center justify-center">
-              <img
-                src="/assets/impactsea.webp"
-                alt="impactsea"
-                className="w-[265px] h-[130px] hover:scale-125 duration-300"
-              />
-            </div>
-            <div className="flex-1 h-[280px] bg-primary-100/50 backdrop-blur-xs rounded-2xl flex items-center justify-center">
-              <img
-                src="/assets/riliv-landingpage.webp"
-                alt="riliv-landingpage"
-                className="w-[265px] h-[130px] hover:scale-125 duration-300"
-              />
-            </div>
-            <div className="flex-1 h-[280px] bg-primary-100/50 backdrop-blur-xs rounded-2xl flex items-center justify-center">
-              <img
-                src="/assets/delvio.webp"
-                alt="delvio"
-                className="w-[265px] h-[130px] hover:scale-125 duration-300"
-              />
-            </div>
-          </div>
+          <Carousel
+            plugins={[
+              Autoplay({
+                delay: 4000,
+              }),
+            ]}
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            className="mt-6 w-full"
+          >
+            <CarouselContent className="ml-0">
+              {dataProjects.map((item, index) => (
+                <CarouselItem
+                  key={index}
+                  className="basis-full ml-5 pl-0 md:basis-1/2 lg:basis-1/4 h-[245px] bg-primary-100/50 backdrop-blur-xs rounded-2xl flex items-center justify-center"
+                >
+                  <a href={item.link} target="_blank">
+                    <img
+                      src={item.src}
+                      alt={item.alt}
+                      className="w-[245px] h-[130px] hover:scale-110 duration-300"
+                    />
+                  </a>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="absolute -top-16 z-30 left-11/12" />
+            <CarouselNext className="absolute -top-16 z-30 right-0" />
+          </Carousel>
         </div>
         <div className="mt-12">
           <h2 className="text-3xl text-white font-bold">

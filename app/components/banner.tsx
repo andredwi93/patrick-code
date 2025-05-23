@@ -19,9 +19,10 @@ export default function Banner() {
             >
               Hire Me
             </Button>
-            <Button
-              variant="secondary"
-              className="flex items-center gap-[10px]"
+            <a
+              href="https://docs.google.com/document/d/1e-Sp_fugjf7zvqdFMPmQANSRMTpYatSswXkwK0w9YvU/edit?usp=sharing"
+              target="_blank"
+              className="flex items-center gap-[10px] py-[10px] px-8 rounded-full cursor-pointer bg-primary-100/75 font-bold text-xl text-slate-50 text-shadow-xl hover:bg-primary-100/80"
             >
               Download CV
               <img
@@ -29,7 +30,7 @@ export default function Banner() {
                 alt="ic-download"
                 className="w-6 h-6"
               />
-            </Button>
+            </a>
           </div>
         </div>
         <div className="w-full h-[514px] relative">

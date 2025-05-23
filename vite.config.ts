@@ -1,6 +1,7 @@
 import { reactRouter } from "@react-router/dev/vite";
 import tailwindcss from "@tailwindcss/vite";
 import { defineConfig } from "vite";
+import removeConsole from "vite-plugin-remove-console";
 import tsconfigPaths from "vite-tsconfig-paths";
 
 export default defineConfig({
@@ -12,5 +13,5 @@ export default defineConfig({
   server: {
     port: 9000,
   },
-  plugins: [tailwindcss(), reactRouter(), tsconfigPaths()],
+  plugins: [tailwindcss(), reactRouter(), tsconfigPaths(), removeConsole()],
 });
