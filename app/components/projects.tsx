@@ -79,7 +79,7 @@ export default function ProjectComponent() {
                   <a href={item.link} target="_blank">
                     <img
                       src={item.src}
-                      alt={item.alt}
+                      alt={item.alt} 
                       className="w-[245px] h-[130px] hover:scale-110 duration-300"
                     />
                   </a>
