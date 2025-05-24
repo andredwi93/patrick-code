@@ -6,9 +6,12 @@ import {
   Scripts,
   ScrollRestoration,
 } from "react-router";
-
+import ReactGA from "react-ga4";
 import type { Route } from "./+types/root";
 import "./app.css";
+import { useEffect } from "react";
+
+const TRACKING_ID = "G-JGM546XSY8";
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -42,6 +45,15 @@ export function Layout({ children }: { children: React.ReactNode }) {
 }
 
 export default function App() {
+  useEffect(() => {
+    ReactGA.initialize(TRACKING_ID);
+    ReactGA.send({
+      hitType: "pageview",
+      page: "/",
+      title: "Home Page",
+    });
+  }, []);
+
   return <Outlet />;
 }
 
