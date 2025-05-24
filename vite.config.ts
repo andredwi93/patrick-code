@@ -3,6 +3,7 @@ import tailwindcss from "@tailwindcss/vite";
 import { defineConfig } from "vite";
 import removeConsole from "vite-plugin-remove-console";
 import tsconfigPaths from "vite-tsconfig-paths";
+import netlifyPlugin from "@netlify/vite-plugin-react-router";
 
 export default defineConfig({
   //change port for production
@@ -13,5 +14,11 @@ export default defineConfig({
   server: {
     port: 9000,
   },
-  plugins: [tailwindcss(), reactRouter(), tsconfigPaths(), removeConsole()],
+  plugins: [
+    tailwindcss(),
+    reactRouter(),
+    tsconfigPaths(),
+    removeConsole(),
+    netlifyPlugin(),
+  ],
 });
