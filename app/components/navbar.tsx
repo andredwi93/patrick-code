@@ -23,6 +23,7 @@ export default function Navbar() {
         <a
           href="https://wa.me/6285233755399"
           target="_blank"
+          aria-label="contact me"
           className="bg-green-100 flex md:hidden px-6 py-2 rounded-full font-bold text-xl text-slate-50 text-shadow-xl hover:bg-green-100/90"
         >
           Contact

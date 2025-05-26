@@ -65,6 +65,7 @@ export default function Home() {
       <a
         href="https://wa.me/6285233755399"
         target="_blank"
+        aria-label="contact me"
         className="hidden md:block fixed bottom-10 right-10 z-50"
       >
         <WhatsappIcon className="w-14 h-14" />

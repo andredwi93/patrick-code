@@ -76,10 +76,10 @@ export default function ProjectComponent() {
                   key={index}
                   className="basis-full ml-5 pl-0 md:basis-1/2 lg:basis-1/4 h-[245px] bg-primary-100/50 backdrop-blur-xs rounded-2xl flex items-center justify-center"
                 >
-                  <a href={item.link} target="_blank">
+                  <a href={item.link} target="_blank" aria-label={item.alt}>
                     <img
                       src={item.src}
-                      alt={item.alt} 
+                      alt={item.alt}
                       className="w-[260px] md:w-[245px] h-[130px] hover:scale-110 duration-300"
                     />
                   </a>
