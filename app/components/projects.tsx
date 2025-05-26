@@ -80,7 +80,7 @@ export default function ProjectComponent() {
                     <img
                       src={item.src}
                       alt={item.alt} 
-                      className="w-[245px] h-[130px] hover:scale-110 duration-300"
+                      className="w-[260px] md:w-[245px] h-[130px] hover:scale-110 duration-300"
                     />
                   </a>
                 </CarouselItem>
