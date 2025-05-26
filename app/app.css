@@ -36,5 +36,5 @@ html {
 }
 
 .wrapper {
-  @apply max-w-[1200px] w-full;
+  @apply max-w-full md:max-w-[768px] lg:max-w-[1200px] w-full;
 }

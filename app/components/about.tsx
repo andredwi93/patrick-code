@@ -5,8 +5,8 @@ export default function About() {
 
   return (
     <div id="about" className="bg-primary-300">
-      <div className="wrapper mx-auto py-16 flex gap-[180px]">
-        <div className="w-[400px] pt-20">
+      <div className="wrapper px-5 lg:px-0 mx-auto py-10 lg:py-16 flex gap-[180px]">
+        <div className="w-full lg:w-[400px] pt-0 lg:pt-20">
           <h2 className="text-3xl text-white font-bold">
             About <span className="text-green-100">Me</span>
           </h2>
@@ -39,7 +39,7 @@ export default function About() {
             </button>
           </p>
         </div>
-        <div className="flex-1 relative w-full h-[calc(499px+78px)]">
+        <div className="hidden lg:flex flex-1 relative w-full h-[calc(499px+78px)]">
           <img
             src="/assets/icons/bg-section-1.svg"
             alt="section"

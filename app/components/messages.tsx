@@ -44,12 +44,12 @@ export default function Messages() {
 
   return (
     <div id="messages" className="bg-primary-300">
-      <div className="wrapper mx-auto py-16 flex gap-12">
-        <div className="w-[600px]">
+      <div className="wrapper mx-auto py-10 lg:py-16 px-5 lg:px-0 flex flex-col lg:flex-row gap-12">
+        <div className="w-full lg:w-[600px]">
           <h2 className="text-3xl text-white font-bold">
             Got a project in <span className="text-green-100">mind?</span>
           </h2>
-          <div className="w-full flex items-end justify-end">
+          <div className="w-full hidden lg:flex items-end justify-end">
             <img
               src="/assets/illus-message.png"
               alt="illus-message"
@@ -59,7 +59,7 @@ export default function Messages() {
         </div>
         <fetcher.Form ref={formRef} method="POST">
           <div className="flex-1">
-            <div className="flex gap-6">
+            <div className="flex flex-col lg:flex-row gap-6">
               <div className="flex-1">
                 <label
                   htmlFor="yourname"
@@ -137,7 +137,7 @@ export default function Messages() {
                     });
                   }
                 }}
-                className="py-4 h-[280px] px-6 w-full bg-primary-100 mt-2 rounded-2xl text-xl text-white font-bold placeholder:text-slate-50/50"
+                className="py-4 h-[150px] lg:h-[280px] px-6 w-full bg-primary-100 mt-2 rounded-2xl text-xl text-white font-bold placeholder:text-slate-50/50"
               ></textarea>
               {msgError.yourmessage && (
                 <p className="text-red-500 text-sm mt-1">

@@ -53,7 +53,7 @@ export default function ProjectComponent() {
   ];
   return (
     <div id="projects" className="bg-primary-300">
-      <div className="wrapper mx-auto py-16">
+      <div className="wrapper mx-auto px-5 lg:px-0 py-10 md:py-16">
         <div className="relative">
           <h2 className="text-3xl text-white font-bold">
             My recent <span className="text-green-100">works</span>
@@ -86,7 +86,7 @@ export default function ProjectComponent() {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious className="absolute -top-16 z-30 left-11/12" />
+            <CarouselPrevious className="absolute -top-16 z-30 left-9/12 md:left-10/12 lg:left-11/12" />
             <CarouselNext className="absolute -top-16 z-30 right-0" />
           </Carousel>
         </div>
@@ -94,7 +94,7 @@ export default function ProjectComponent() {
           <h2 className="text-3xl text-white font-bold">
             My <span className="text-green-100">skills</span>
           </h2>
-          <div className="mt-6 flex gap-4">
+          <div className="mt-6 flex gap-4 flex-wrap">
             <Icons />
           </div>
         </div>
