@@ -16,7 +16,7 @@ export default function ProjectComponent() {
       alt: "impactsea",
     },
     {
-      link: "https://riliv.co/",
+      link: "https://www.riliv.co/",
       src: "/assets/riliv-landingpage.webp",
       alt: "riliv-landingpage",
     },
