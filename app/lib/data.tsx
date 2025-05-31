@@ -31,7 +31,7 @@ export default function Icons() {
     <NextjsDark className="w-10 h-10" />,
     <Reactrouter className="w-10 h-10" />,
     <ReactQueryIcon className="w-10 h-10" />,
-    <Flutter className="w-10 h-10" />,
+    // <Flutter className="w-10 h-10" />,
     <Nodejs className="w-10 h-10" />,
     <Python className="w-10 h-10" />,
     <DjangoIcon className="w-10 h-10" />,
