@@ -7,7 +7,6 @@ import {
   Html5,
   Javascript,
   MongodbWordmark,
-  NestjsDark,
   NextjsDark,
   Nodejs,
   PostgresqlDark,
@@ -16,6 +15,9 @@ import {
   Reactrouter,
   Tailwindcss,
   Typescript,
+  Python,
+  DjangoIcon,
+  MysqlWordmark
 } from "../components/icons/skills";
 
 export default function Icons() {
@@ -31,9 +33,11 @@ export default function Icons() {
     <ReactQueryIcon className="w-10 h-10" />,
     <Flutter className="w-10 h-10" />,
     <Nodejs className="w-10 h-10" />,
-    <NestjsDark className="w-10 h-10" />,
+    <Python className="w-10 h-10" />,
+    <DjangoIcon className="w-10 h-10" />,
     <MongodbWordmark className="w-10 h-10" />,
     <PostgresqlDark className="w-10 h-10" />,
+    <MysqlWordmark className="w-10 h-10" />,
     <Firebase className="w-10 h-10" />,
     <Docker className="w-10 h-10" />,
     <Git className="w-10 h-10" />,
