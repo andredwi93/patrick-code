@@ -2,22 +2,20 @@ import {
   Css,
   Docker,
   Firebase,
-  Flutter,
   Git,
   Html5,
   Javascript,
   MongodbWordmark,
+  MysqlWordmark,
   NextjsDark,
   Nodejs,
   PostgresqlDark,
+  Python,
   ReactDark,
   ReactQueryIcon,
   Reactrouter,
   Tailwindcss,
-  Typescript,
-  Python,
-  DjangoIcon,
-  MysqlWordmark
+  Typescript
 } from "../components/icons/skills";
 
 export default function Icons() {
@@ -34,7 +32,7 @@ export default function Icons() {
     // <Flutter className="w-10 h-10" />,
     <Nodejs className="w-10 h-10" />,
     <Python className="w-10 h-10" />,
-    <DjangoIcon className="w-10 h-10" />,
+    // <DjangoIcon className="w-10 h-10" />,
     <MongodbWordmark className="w-10 h-10" />,
     <PostgresqlDark className="w-10 h-10" />,
     <MysqlWordmark className="w-10 h-10" />,
